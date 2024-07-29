@@ -3,11 +3,11 @@ import java.util.List;
 public class Treinador extends Usuario {
     private String credencial;
     private int anosExperiencias;
-    private List<String> equipesTreinadas;
+    private List<Equipe> equipesTreinadas;
     private String Especialidade;
     private List<String> titulosConquistados;
     private String metodologia;
-    private boolean dispobilidadeNovosTreinos;
+    private List<Jogador> jogaresTreinados;
 
     public Treinador(String nome, String email) {
         super(nome, email);
@@ -25,10 +25,10 @@ public class Treinador extends Usuario {
     public int getAnosExperiencias(){
         return this.anosExperiencias;
     }
-    public void adicionaEquipesTreinadas(String equipe){
+    public void adicionaEquipesTreinadas(Equipe equipe){
         this.equipesTreinadas.add(equipe);
     }
-    public List<String> getEquipesTreinadas(){
+    public List<Equipe> getEquipesTreinadas(){
         return this.equipesTreinadas;
     }
     public void setEspecialidade(String especialidade){
@@ -49,10 +49,11 @@ public class Treinador extends Usuario {
     public String getMetodologia(){
         return this.metodologia;
     }
-    public void setDispobilidadeNovosTreinos(boolean disponibilidade){
-        this.dispobilidadeNovosTreinos = disponibilidade;
+    public void adicionaJogador(Jogador jogador){
+        jogaresTreinados.add(jogador);
     }
-    public boolean getDispobilidadeNovosTreinsos(){
-        return this.dispobilidadeNovosTreinos;
+
+    public List<Jogador> getJogadoresTreinados(){
+        return this.jogaresTreinados;
     }
 }
