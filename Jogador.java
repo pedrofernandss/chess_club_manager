@@ -8,6 +8,7 @@ public class Jogador extends Usuario {
     private int partidasJogadas;
     private int vitorias;
     private int derrotas;
+    private Treinador treinador;
 
     public Jogador(String nome, String email) {
         super(nome, email);
@@ -17,43 +18,51 @@ public class Jogador extends Usuario {
         this.posicaoRanking = posicaoRanking;
     }
     public int getPosicaoRanking() {
-        return posicaoRanking;
+        return this.posicaoRanking;
     }
     public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
     public String getCategoria() {
-        return categoria;
+        return this.categoria;
     }
     public void setFederacao(String federacao) {
         this.federacao = federacao;
     }
     public String getFederacao() {
-        return federacao;
+        return this.federacao;
     }
     public void adicionaTorneio(String torneio) {
         this.torneiosParticipados.add(torneio);
     }
     public List<String> getTorneiosParticipados() {
-        return torneiosParticipados;
+        return this.torneiosParticipados;
     }
 
     public void setPartidasJogadas(int partidasJogadas) {
         this.partidasJogadas = partidasJogadas;
     }
     public int getPartidasJogadas() {
-        return partidasJogadas;
+        return this.partidasJogadas;
     }
     public void setVitorias(int vitorias) {
         this.vitorias = vitorias;
     }
     public int getVitorias() {
-        return vitorias;
+        return this.vitorias;
     }
     public void setDerrotas(int derrotas) {
         this.derrotas = derrotas;
     }
     public int getDerrotas() {
-        return derrotas;
+        return this.derrotas;
+    }
+
+    public void setTreinador(Treinador treinador){
+        this.treinador = treinador;
+    }
+
+    public Treinador getTreinador() {
+        return this.treinador;
     }
 }
