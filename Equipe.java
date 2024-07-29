@@ -1,6 +1,7 @@
 import java.util.List;
 
 public class Equipe {
+    public int id;
     public String nome;
     private String categoria;
     private Treinador treinadorResposavel;

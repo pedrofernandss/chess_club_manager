@@ -10,8 +10,8 @@ public class Jogador extends Usuario {
     private int derrotas;
     private Treinador treinador;
 
-    public Jogador(String nome, String email) {
-        super(nome, email);
+    public Jogador(int id, String nome, String email) {
+        super(id, nome, email);
     }
 
     public void setPosicaoRanking(int posicaoRanking) {

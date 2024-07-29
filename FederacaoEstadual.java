@@ -1,6 +1,7 @@
 import java.util.List;
 
 public class FederacaoEstadual {
+    public int id;
     public String nome;
     private String localizacao;
     private List<Equipe> listaEquipes;

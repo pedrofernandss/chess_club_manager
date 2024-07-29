@@ -9,8 +9,8 @@ public class Treinador extends Usuario {
     private String metodologia;
     private List<Jogador> jogaresTreinados;
 
-    public Treinador(String nome, String email) {
-        super(nome, email);
+    public Treinador(int id, String nome, String email) {
+        super(id, nome, email);
     }
 
     public void setCredencial(String credencial){

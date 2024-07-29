@@ -1,7 +1,7 @@
 import java.util.Date;
 
 public abstract class Usuario {
-    private int id;
+    public int id;
     public String nome;
     public String email;
     private String senha;
@@ -9,7 +9,8 @@ public abstract class Usuario {
     private String genero;
     private Date dataCadastro;
 
-    public Usuario(String nome, String email) {
+    public Usuario(int id, String nome, String email) {
+        this.id = id;
         this.nome = nome;
         this.email = email;
     }
